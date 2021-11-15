@@ -1,12 +1,23 @@
-var a = "dog";
-var b = 14;
+var myString = "I'm a \"fun\" string with dog";
 
-//double negative
-if (!isNaN(a)){
+console.log(myString);
+console.log(myString.length);
+console.log(myString.toUpperCase());
+console.log(myString.toLowerCase());
+console.log(myString.indexOf("string"));
 
-    console.log("Perfect number is " + (a * b));
+if (myString.indexOf("dog") === -1){
+
+    console.log("Dog is not in the string");
 
 } else {
 
-    console.log("It's not a number");
+    console.log("Dog starts at positon " + myString.indexOf("dog"));
 }
+
+var string1 = "abc";
+var string2 = "ABC";
+
+
+console.log(string1.toLowerCase() === string2.toLowerCase());
+console.log(string1 > string2);
