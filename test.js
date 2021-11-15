@@ -1,9 +1,15 @@
-var myAge = prompt("What is your age?");
-
-for (myAge; myAge < 18; myAge++) {
+for (i = 0; i < 10; i++) {
     
-    document.write("You can't come inside this club, you are " + myAge + "<br>");
-   
+    if(i === 3 || i === 5){
+
+        continue;
+    }
+    console.log(i);
+
+    if (i === 7){
+
+        break;
+    }
 }
 
-document.write("You are finally 18! You can come!");
+console.log("I have broken out of the loop");
