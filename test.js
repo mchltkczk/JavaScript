@@ -1,10 +1,8 @@
 var myAge = prompt("What is your age?");
 
-if (myAge < 18 || myAge > 40 || myAge == 30){
-
-    document.write("You can't come");
-
-} else {
-    
-    document.write("You can come");
+while (myAge < 18) {
+    document.write("You can't come inside this club, you are " + myAge + "<br>");
+    myAge++;
 }
+
+document.write("You are finally 18! You can come!");
