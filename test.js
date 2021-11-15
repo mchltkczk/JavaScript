@@ -1,11 +1,18 @@
-var youLikeMeat = true;
-var myNum = 11;
-
-if (myNum == 10) {
-
-    document.write("mNum is equal to 10");
-}   else {
-
-        document.write("myNum is not equal to 10");
+var myAge = prompt("What is your age?");
     
+if (myAge > 30){
+
+    document.write("You are over 30!");
+
+} else if (myAge > 20){
+
+    document.write("You are over 20");
+
+} else if (myAge > 10){
+
+    document.write("You are over 10");
+    
+} else {
+
+    document.write("You are not over 10");
 }
