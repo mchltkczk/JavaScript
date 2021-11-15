@@ -1,8 +1,4 @@
-function lessThanOrEqualToZero(num) {
-	var num;
-	if (num <= 0 && !isNaN(num)){
-		return true;
-	} else {
-		return false;
-	}
+function countWords(str) {
+    var strArray = str.split(" ");
+return strArray.length;
 }
