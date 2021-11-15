@@ -1,4 +1,13 @@
-function countWords(str) {
-    var strArray = str.split(" ");
-return strArray.length;
+function isEvenOrOdd(num) {
+	
+	if (num % 2 == 0){
+		
+		let num = "even";
+		return num;
+
+	} else {
+		
+		let num = "odd";
+		return num;
+	}
 }
