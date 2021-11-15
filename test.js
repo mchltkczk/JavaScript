@@ -1,17 +1,12 @@
-function getAverage (a, b){
-    
-    var average = (a + b) / 2;
-    console.log(average);
-    return average;
+var a = "dog";
+var b = 14;
 
+//double negative
+if (!isNaN(a)){
+
+    console.log("Perfect number is " + (a * b));
+
+} else {
+
+    console.log("It's not a number");
 }
-
-var myResult = getAverage(7, 11);
-
-function logResult(){
-
-    console.log("The average is " + myResult);
-
-}
-
-logResult();
