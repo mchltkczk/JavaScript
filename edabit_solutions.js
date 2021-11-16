@@ -1,7 +1,8 @@
-function findSmallestNum(arr) {
-	if (arr){
-		return Math.min(...arr);
-	} else{
-		return null;
-	}
-}
+function getAbsSum(arr){
+    let result = 0;
+    
+    for(i = 0; i < arr.length; i++) {
+      result += Math.abs(arr[i]);
+    }
+      return result;
+  }
