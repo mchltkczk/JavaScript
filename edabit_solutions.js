@@ -1,3 +1,7 @@
-function getLastItem(arr) {
-	return arr.pop();
+function findSmallestNum(arr) {
+	if (arr){
+		return Math.min(...arr);
+	} else{
+		return null;
+	}
 }
