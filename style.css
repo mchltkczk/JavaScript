@@ -46,7 +46,7 @@ body {
 #show-more:hover {
     background: skyblue;
     width: 180px;
-    -webkit-transition: max-width 0.7s;
-    -moz-transition: max-width 0.7s;
+    -webkit-transition: width 0.7s;
+    -moz-transition: width 0.7s;
     transition: 0.7s;
 }
