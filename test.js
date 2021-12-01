@@ -1,23 +1,24 @@
-var myString = "I'm a \"fun\" string with dog";
+function setUpEvents(){
 
-console.log(myString);
-console.log(myString.length);
-console.log(myString.toUpperCase());
-console.log(myString.toLowerCase());
-console.log(myString.indexOf("string"));
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-if (myString.indexOf("dog") === -1){
+button.onclick = function (){
 
-    console.log("Dog is not in the string");
-
-} else {
-
-    console.log("Dog starts at positon " + myString.indexOf("dog"));
+    if(content.className == "open"){
+        //shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
+    } else {
+        //expand the box
+        content.className = "open";
+        button.innerHTML = "Show Less";
+    }
+};
 }
 
-var string1 = "abc";
-var string2 = "ABC";
+window.onload = function(){
 
+        setUpEvents();
 
-console.log(string1.toLowerCase() === string2.toLowerCase());
-console.log(string1 > string2);
+};
